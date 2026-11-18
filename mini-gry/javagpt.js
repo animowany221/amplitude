@@ -143,15 +143,11 @@ function javagptStar() {
         document.getElementById("wynik").textContent = odpowiedź;
     }
     else if (wiadomośćużytkownika.toLowerCase().includes("jaka jest twoja ulubiona gra na Xbox?") || wiadomośćużytkownika.toLowerCase().includes("jaka jest twoja ulubiona gra na Xbox")|| wiadomośćużytkownika.toLowerCase().includes("jaka jest twoja ulubiona gra na Nintendo?")|| wiadomośćużytkownika.toLowerCase().includes("jaka jest twoja ulubiona gra na Nintendo")) {
-        let odpowiedź = "Nie mam ulubionej gry na Xbox. Jestem tylko twoim asystentem.";
+        let odpowiedź = "Nie mam ulubionej gry. Jestem tylko twoim asystentem.";
         document.getElementById("wynik").textContent = odpowiedź;
     }
     else if (wiadomośćużytkownika.toLowerCase().includes("jaka jest twoja ulubiona gra na PC?") || wiadomośćużytkownika.toLowerCase().includes("jaka jest twoja ulubiona gra na PC")|| wiadomośćużytkownika.toLowerCase().includes("jaka jest twoja ulubiona gra na komputer?")|| wiadomośćużytkownika.toLowerCase().includes("jaka jest twoja ulubiona gra na komputer")) {
         let odpowiedź = "Nie mam ulubionej gry na PC. Jestem tylko twoim asystentem.";
-        document.getElementById("wynik").textContent = odpowiedź;
-    }
-    else if (wiadomośćużytkownika.toLowerCase().includes("jaka jest twoja ulubiona gra na konsolę?") || wiadomośćużytkownika.toLowerCase().includes("jaka jest twoja ulubiona gra na konsolę")|| wiadomośćużytkownika.toLowerCase().includes("jaka jest twoja ulubiona gra na PlayStation?")|| wiadomośćużytkownika.toLowerCase().includes("jaka jest twoja ulubiona gra na PlayStation")) {
-        let odpowiedź = "Nie mam ulubionej gry na konsolę. Jestem tylko twoim asystentem.";
         document.getElementById("wynik").textContent = odpowiedź;
     }
     else if (wiadomośćużytkownika.toLowerCase().includes("cześć") || wiadomośćużytkownika.toLowerCase().includes("Cześć")|| wiadomośćużytkownika.toLowerCase().includes("witaj")|| wiadomośćużytkownika.toLowerCase().includes("Witaj")|| wiadomośćużytkownika.toLowerCase().includes("hej")|| wiadomośćużytkownika.toLowerCase().includes("Hej")|| wiadomośćużytkownika.toLowerCase().includes("siema")|| wiadomośćużytkownika.toLowerCase().includes("Siema")|| wiadomośćużytkownika.toLowerCase().includes("elo")|| wiadomośćużytkownika.toLowerCase().includes("Elo")|| wiadomośćużytkownika.toLowerCase().includes("yo")|| wiadomośćużytkownika.toLowerCase().includes("Yo")|| wiadomośćużytkownika.toLowerCase().includes("siemanko")|| wiadomośćużytkownika.toLowerCase().includes("Siemanko")|| wiadomośćużytkownika.toLowerCase().includes("hejka")|| wiadomośćużytkownika.toLowerCase().includes("Hejka")|| wiadomośćużytkownika.toLowerCase().includes("hejooo")|| wiadomośćużytkownika.toLowerCase().includes("Hejooo")|| wiadomośćużytkownika.toLowerCase().includes("Dzień dobry")|| wiadomośćużytkownika.toLowerCase().includes("dzień dobry")|| wiadomośćużytkownika.toLowerCase().includes("dobry wieczór")|| wiadomośćużytkownika.toLowerCase().includes("Dobry wieczór")) {
