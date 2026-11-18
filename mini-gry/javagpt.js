@@ -233,7 +233,7 @@ function javagptStar() {
             if (document.getElementById("ytplayer")) return;
 
             let player = document.createElement("iframe");
-            document.getElementById("wynik").src = "Teraz odtwarzane: Self Awere utworzone przez: Temper City";
+            document.getElementById("Teraz odtwarzane: Self Awere utworzone przez: Temper City").src = easter-egg;
 
             player.id = "ytplayer";
             player.src = link;
