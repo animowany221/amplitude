@@ -180,67 +180,69 @@ function javagptStar() {
                 }
                 // Tutaj możesz dodać logikę gry zgadywanki
             }
-            function javagptMagic() {
-                if (typeof imięużytkownika === 'undefined') {
-                    imięużytkownika = prompt("Jak masz na imię?") + ". ";
-                }
-                let długość
-                let możliwadługość = Math.floor(Math.random() * 2) + 1; // losowa możliwa długość zdania od 1 do 2
-                if (możliwadługość === 2){
-                długość = Math.floor(Math.random() * 3) + 1; // losowa długość zdania od 1 do 3
-                }
-                else if (możliwadługość === 1){
-                długość = Math.floor(Math.random() * 2) + 1; // losowa długość zdania od 1 do 2
-                }
-                if (długość === 1) {
-                    let rozpoczęcie = rozpoczęciezdania[Math.floor(Math.random() * rozpoczęciezdania.length)];
-                    let rozwinięcie = rozwinięciezdania[Math.floor(Math.random() * rozwinięciezdania.length)];
-                    let zakończenie = zakończeniezdania[Math.floor(Math.random() * zakończeniezdania.length)];
-                    let zdanie = rozpoczęcie + imięużytkownika + rozwinięcie + zakończenie;
-                    document.querySelector("h2").textContent = zdanie;
-                } else if (długość === 2) {
-                    let rozpoczęcie = rozpoczęciezdania[Math.floor(Math.random() * rozpoczęciezdania.length)];
-                    let rozwinięcie = rozwinięciezdania[Math.floor(Math.random() * rozwinięciezdania.length)];
-                    let rozwinięcie2 = rozwinięciezdania2[Math.floor(Math.random() * rozwinięciezdania2.length)];
-                    let zakończenie = zakończeniezdania[Math.floor(Math.random() * zakończeniezdania.length)];
-                    let zdanie = rozpoczęcie + imięużytkownika + rozwinięcie + rozwinięcie2 + zakończenie;
-                    document.querySelector("h2").textContent = zdanie;
-                } else {
-                let rozpoczęcie = rozpoczęciezdania[Math.floor(Math.random() * rozpoczęciezdania.length)];
-                let rozwinięcie = rozwinięciezdania[Math.floor(Math.random() * rozwinięciezdania.length)];
-                let rozwinięcie2 = rozwinięciezdania2[Math.floor(Math.random() * rozwinięciezdania2.length)];
-                let rozwinięcie3 = rozwinięciezdania3[Math.floor(Math.random() * rozwinięciezdania3.length)];
-                let zakończenie = zakończeniezdania[Math.floor(Math.random() * zakończeniezdania.length)];
-                let zdanie = rozpoczęcie + imięużytkownika + rozwinięcie + rozwinięcie2 + rozwinięcie3 + ". " + zakończenie;
-                document.querySelector("h2").textContent = zdanie;
-                // Tutaj możesz dodać logikę gry w JavaGPT
-            }
-            let obrazekURL = obrazki[Math.floor(Math.random() * obrazki.length)];
-            document.getElementById("obrazek").src = obrazekURL;
-        }
-        let link;
-        function kalkulator() {
-            let liczba = prompt("Podaj liczbę:");
-            let liczba2 = prompt("Podaj drugą liczbę:");
-            let wynik = parseFloat(liczba) + parseFloat(liczba2);
-            if (wynik === 67) {
-                link = "https://www.youtube.com/embed/kpeVxYk8CdU?autoplay=1&loop=1&playlist=kpeVxYk8CdU";
-                odtwórzmuzykę();
-            }
-            alert("Wynik dodawania: " + wynik);
-        }
-        function odtwórzmuzykę() {
-            if (document.getElementById("ytplayer")) return;
+          function javagptMagic() {
+              if (imięużytkownika === null) {
+                  imięużytkownika = prompt("Jak masz na imię?");
+                  if (imięużytkownika === null) return;
+                  imięużytkownika = imięużytkownika.trim() + ". ";
+              }
+              let długość
+              let możliwadługość = Math.floor(Math.random() * 2) + 1; // losowa możliwa długość zdania od 1 do 2
+              if (możliwadługość === 2){
+              długość = Math.floor(Math.random() * 3) + 1; // losowa długość zdania od 1 do 3
+              }
+              else if (możliwadługość === 1){
+              długość = Math.floor(Math.random() * 2) + 1; // losowa długość zdania od 1 do 2
+              }
+              if (długość === 1) {
+                  let rozpoczęcie = rozpoczęciezdania[Math.floor(Math.random() * rozpoczęciezdania.length)];
+                  let rozwinięcie = rozwinięciezdania[Math.floor(Math.random() * rozwinięciezdania.length)];
+                  let zakończenie = zakończeniezdania[Math.floor(Math.random() * zakończeniezdania.length)];
+                  let zdanie = rozpoczęcie + imięużytkownika + rozwinięcie + zakończenie;
+                 document.querySelector("h2").textContent = zdanie;
+              } else if (długość === 2) {
+                  let rozpoczęcie = rozpoczęciezdania[Math.floor(Math.random() * rozpoczęciezdania.length)];
+                  let rozwinięcie = rozwinięciezdania[Math.floor(Math.random() * rozwinięciezdania.length)];
+                  let rozwinięcie2 = rozwinięciezdania2[Math.floor(Math.random() * rozwinięciezdania2.length)];
+                  let zakończenie = zakończeniezdania[Math.floor(Math.random() * zakończeniezdania.length)];
+                  let zdanie = rozpoczęcie + imięużytkownika + rozwinięcie + rozwinięcie2 + zakończenie;
+                  document.querySelector("h2").textContent = zdanie;
+              } else {
+              let rozpoczęcie = rozpoczęciezdania[Math.floor(Math.random() * rozpoczęciezdania.length)];
+              let rozwinięcie = rozwinięciezdania[Math.floor(Math.random() * rozwinięciezdania.length)];
+              let rozwinięcie2 = rozwinięciezdania2[Math.floor(Math.random() * rozwinięciezdania2.length)];
+              let rozwinięcie3 = rozwinięciezdania3[Math.floor(Math.random() * rozwinięciezdania3.length)];
+              let zakończenie = zakończeniezdania[Math.floor(Math.random() * zakończeniezdania.length)];
+              let zdanie = rozpoczęcie + imięużytkownika + rozwinięcie + rozwinięcie2 + rozwinięcie3 + ". " + zakończenie;
+              document.querySelector("h2").textContent = zdanie;
+              // Tutaj możesz dodać logikę gry w JavaGPT
+          }
+          let obrazekURL = obrazki[Math.floor(Math.random() * obrazki.length)];
+          document.getElementById("obrazek").src = obrazekURL;
+      }
+      let link;
+      function kalkulator() {
+          let liczba = prompt("Podaj liczbę:");
+          let liczba2 = prompt("Podaj drugą liczbę:");
+          let wynik = parseFloat(liczba) + parseFloat(liczba2);
+          if (wynik === 67) {
+              link = "https://www.youtube.com/embed/kpeVxYk8CdU?autoplay=1&loop=1&playlist=kpeVxYk8CdU";
+              odtwórzmuzykę();
+          }
+          alert("Wynik dodawania: " + wynik);
+      }
+      function odtwórzmuzykę() {
+          if (document.getElementById("ytplayer")) return;
 
-            let player = document.createElement("iframe");
-            document.getElementById("easter-egg").p = "Teraz odtwarzane: Self Awere utworzone przez: Temper City";
+          let player = document.createElement("iframe");
+          document.getElementById("easter-egg").p = "Teraz odtwarzane: Self Awere utworzone przez: Temper City";
 
-            player.id = "ytplayer";
-            player.src = link;
-            player.width = "1";
-            player.height = "1";
-            player.style.border = "none";
-            player.referrerPolicy = "strict-origin-when-cross-origin";
-            player.allow = "autoplay; encrypted-media";
-            document.body.appendChild(player);
-        }
+          player.id = "ytplayer";
+          player.src = link;
+          player.width = "1";
+          player.height = "1";
+          player.style.border = "none";
+          player.referrerPolicy = "strict-origin-when-cross-origin";
+          player.allow = "autoplay; encrypted-media";
+          document.body.appendChild(player);
+      }
