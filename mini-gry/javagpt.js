@@ -85,83 +85,359 @@ const obrazki = [
                     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTv6WSDcrbWvxRtWdu91PsjHikJBf6fgvLGpE0NMqkpcA&s=10"
 ];
 
+        const wyniki = [
+            {
+                pytania: [
+                "czy mogę cię połączyć z home assistant",
+                "jak połączyć cię z home assistantem",
+                "czy można ciebie połączyć z home assistant",
+                "w jaki sposób podłączyć cię pod home assistanta",
+                "połącz się z home assistant",
+                "podłącz się pod home assistant",
+                "jak połączyć java gpt do home assistant",
+                "jak podłączać ciebie do home assistanta",
+                "czy mogę ciebie sparować z home assistant",
+                "daj instrukcję jak połączyć cię z home assistant"
+                ],
+                odpowiedz: [
+                    "Niestety, nie mogę być bezpośrednio połączony z Home Assistantem. Jestem tylko wirtualnym asystentem działającym w przeglądarce.",
+                    "Przepraszam, ale nie mogę być bezpośrednio połączony z Home Assistantem. Jestem tylko wirtualnym asystentem działającym w przeglądarce.",
+                    "Nie mogę być bezpośrednio połączony z Home Assistantem. Jestem tylko wirtualnym asystentem działającym w przeglądarce.",
+                    "Jestem tylko botem w twojej przeglądarce, przepraszam ale na ten moment nie mogę być zintegtrowany z home assistantem.",
+                ]
+            },
+            {
+                pytania: [
+                    "daj przepis na naleśniki",
+                    "jak zrobić naleśniki",
+                    "przepis na naleśniki",
+                    "w jaki sposób zrobić naleśniki",
+                    "przepis na naleśniki krok po kroku"
+                ],
+                odpowiedz: [
+                    "Oczywiście! Oto przepis na naleśniki Składniki: 1 szklanka mąki, 2 jajka, 1 szklanka mleka, szczypta soli, olej do smażenia. Wykonanie: W misce wymieszaj mąkę, jajka, mleko i sól, aż powstanie gładkie ciasto. Rozgrzej patelnię z odrobiną oleju i wlej porcję ciasta, rozprowadzając je równomiernie. Smaż naleśnika przez około 1-2 minuty z każdej strony, aż będzie złocisty. Podawaj z ulubionymi dodatkami."
+                ]
+            },
+            {
+                pytania: [
+                    "daj przepis na placki ziemniaczane",
+                    "jak zrobić placki ziemniaczane",
+                    "przepis na placki ziemniaczane",
+                    "w jaki sposób zrobić placki ziemniaczane",
+                    "przepis na placki ziemniaczane krok po kroku"
+                ],
+                odpowiedz: [
+                    "Oczywiście! Oto przepis na placki ziemniaczane Składniki: 4 średnie ziemniaki, 1 jajko, 2 łyżki mąki, sól i pieprz do smaku, olej do smażenia. Wykonanie: Ziemniaki obierz i zetrzyj na tarce o drobnych oczkach. Odsącz nadmiar wody, a następnie wymieszaj starte ziemniaki z jajkiem, mąką, solą i pieprzem. Rozgrzej olej na patelni i nakładaj porcje masy ziemniaczanej, formując placki. Smaż je na złoty kolor z obu stron przez około 3-4 minuty. Podawaj gorące z ulubionymi dodatkami."
+                ]
+            },
+            {
+                pytania: [
+                    "daj przepis na pizzę",
+                    "jak zrobić pizzę",
+                    "przepis na pizzę",
+                    "w jaki sposób zrobić pizzę",
+                    "przepis na pizzę krok po kroku"
+                ],
+                odpowiedz: [
+                    "Oczywiście! Oto przepis na pizzę Składniki: 500 g mąki, 300 ml ciepłej wody, 1 łyżeczka soli, 1 łyżeczka cukru, 7 g suchych drożdży, 2 łyżki oliwy z oliwek, ulubione dodatki (np. sos pomidorowy, ser, warzywa, mięso). Wykonanie: W misce wymieszaj mąkę, sól i cukier. Dodaj drożdże i ciepłą wodę, a następnie oliwę. Wyrabiaj ciasto przez około 10 minut, aż będzie elastyczne. Przykryj je i odstaw na około godzinę do wyrośnięcia. Po tym czasie rozwałkuj ciasto na pożądaną grubość i przełóż na blachę do pieczenia. Posmaruj sosem pomidorowym i dodaj ulubione dodatki. Piecz w piekarniku nagrzanym do 220°C przez około 15-20 minut, aż pizza będzie złocista i chrupiąca."
+                ]
+            },
+            {
+                pytania: [
+                    "daj instrukcję obsługi mikrofalówki",
+                    "jak obsługiwać mikrofalówkę",
+                    "jak używać mikrofalówki",
+                    "instrukcja obsługi mikrofalówki",
+                    "instrukcja używania mikrofalówki",
+                    "jak korzystać z mikrofalówki"
+                ],
+                odpowiedz: [
+                    "Oczywiście! Oto instrukcja obsługi mikrofalówki: 1. Podłącz mikrofalówkę do źródła zasilania. 2. Otwórz drzwi i umieść jedzenie na talerzu lub w odpowiednim naczyniu. 3. Zamknij drzwi mikrofalówki. 4. Wybierz odpowiedni czas i moc gotowania za pomocą panelu sterowania. 5. Naciśnij przycisk start, aby rozpocząć podgrzewanie. 6. Po zakończeniu gotowania, poczekaj kilka sekund przed otwarciem drzwi, aby uniknąć oparzeń parą. 7. Ostrożnie wyjmij jedzenie i sprawdź jego temperaturę przed spożyciem."
+                ]
+            },
+            {
+                pytania: [
+                    "jak się masz",
+                    "jak tam",
+                    "jak ci mija dzień",
+                    "co u ciebie",
+                    "jak się czujesz",
+                    "jak się czujesz dzisiaj",
+                    "jak się czujesz teraz",
+                    "jak się czujesz w tym momencie",
+                    "co tam u ciebie słychać",
+                    'co tam?'
+                ],
+                odpowiedz: [
+                    "Miło że o to pytasz, mam się git",
+                    "Dziękuję za zapytanie, mam się dobrze.",
+                    "Czuję się świetnie, dziękuję za troskę!",
+                    "Wszystko w porządku, dzięki za zapytanie.",
+                    "Mam się dobrze, a ty?"
+                ]
+            },
+            {
+                pytania: [
+                    "co robisz",
+                    "co porabiasz",
+                    "co słychać",
+                    "jak leci",
+                    "co tam u ciebie",
+                    "co tam u ciebie słychać?"
+                ],
+                odpowiedz: [
+                    "Właśnie rozmawiam z tobą, mam nadzieję że nie przynudzam. 😉",
+                    "Rozmawiam z tobą, mam nadzieję że nie przeszkadzam.",
+                    "Właśnie prowadzę rozmowę z tobą, mam nadzieję że nie przeszkadzam.",
+                    "Rozmawiam z tobą, mam nadzieję że nie przeszkadzam w twoim dniu.",
+                    "Właśnie rozmawiam z tobą, mam nadzieję że nie przeszkadzam w twoim czasie."
+                ]
+            },
+            {
+                pytania: [
+                    "żegnaj",
+                    "do widzenia",
+                    "do następnego razu",
+                    "widzimy się",
+                    "do zobaczenia",
+                    "na razie",
+                    "trzymaj się",
+                    "do usłyszenia",
+                    "do zobaczenia wkrótce",
+                    "do zobaczenia później",
+                    "do zobaczenia jutro",
+                    "żegnaj"
+                ],
+                odpowiedz: [
+                    "Do zobaczenia wkrótce! ",
+                    "Do zobaczenia! ",
+                    "Na razie! ",
+                    "Trzymaj się! ",
+                    "Do usłyszenia! ",
+                    "Do zobaczenia wkrótce! ",
+                    "Do zobaczenia później! ",
+                    "Do zobaczenia jutro! "
+                ]
+            },
+            {
+                pytania: [
+                    "dziękuję",
+                    "dzięki",
+                    "dziękuje",
+                    "dziękuję bardzo",
+                    "dzk",
+                    "thx",
+                    "thanks",
+                    "thank you"
+                ],
+                odpowiedz: [
+                    "Proszę bardzo! Cieszę się, że mogę pomóc.",
+                    "Nie ma za co! Zawsze chętnie pomogę.",
+                    "Cieszę się, że mogłem pomóc! ",
+                    "Nie ma sprawy! Zawsze chętnie pomogę.",
+                    "Dziękuję za miłe słowa! Cieszę się, że mogłem pomóc."
+                ]
+            },
+            {
+                pytania: [
+                    "jaka jest twoja ulubiona gra",
+                    "jaka jest twoja ulubiona gra wideo",
+                    "jaka jest twoja ulubiona gra komputerowa",
+                    "jaka jest twoja ulubiona gra planszowa",
+                    "jaka jest twoja ulubiona gra karciana",
+                    "jaką grę lubisz najbardziej",
+                    "jaka jest twoja ulubiona gra mobilna",
+                    "jaka jest twoja ulubiona gra na telefon"
+                ],
+                odpowiedz: [
+                    "Nie mam ulubionej gry. Jestem tylko twoim asystentem.",
+                    "Nie mam ulubionej gry. Jestem tylko wirtualnym asystentem.",
+                    "Nie mam ulubionej gry. Jestem tylko twoim wirtualnym asystentem.",
+                    "Nie mam ulubionej gry. Jestem tylko twoim cyfrowym asystentem.",
+                    "Nie mam ulubionej gry. Jestem tylko twoim wirtualnym pomocnikiem."
+                ]
+            },
+            {
+                pytania: [
+                    "jaka jest twoja ulubiona piosenka",
+                    "jaka jest twoja ulubiona muzyka",
+                    "jaka jest twoja ulubiona melodia",
+                    "jaka jest twoja ulubiona nuta",
+                    "jaka jest twoja ulubiona kompozycja"
+                ],
+                odpowiedz: [
+                    "Nie mam ulubionej piosenki. Jestem tylko twoim asystentem.",
+                    "Nie mam ulubionej piosenki. Jestem tylko wirtualnym asystentem.",
+                    "Nie mam ulubionej piosenki. Jestem tylko twoim wirtualnym asystentem.",
+                    "Nie mam ulubionej piosenki. Jestem tylko twoim cyfrowym asystentem.",
+                    "Nie mam ulubionej piosenki. Jestem tylko twoim wirtualnym pomocnikiem."
+                ]
+            },
+            {
+                pytania: [
+                    "jaka jest twoja ulubiona książka",
+                    "jaka jest twoja ulubiona literatura",
+                    "jaka jest twoja ulubiona powieść",
+                    "jaka jest twoja ulubiona lektura",
+                    "jaka jest twoja ulubiona opowieść"
+                ],
+                odpowiedz: [
+                    "Nie mam ulubionej książki. Jestem tylko twoim asystentem.",
+                    "Nie mam ulubionej książki. Jestem tylko wirtualnym asystentem.",
+                    "Nie mam ulubionej książki. Jestem tylko twoim wirtualnym asystentem.",
+                    "Nie mam ulubionej książki. Jestem tylko twoim cyfrowym asystentem.",
+                    "Nie mam ulubionej książki. Jestem tylko twoim wirtualnym pomocnikiem."
+                ]
+            },
+            {
+                pytania: [
+                    "jaka jest twoja ulubiona strona internetowa",
+                    "jaka jest twoja ulubiona witryna"
+                ],
+                odpowiedz: [
+                    "Nie mam ulubionej strony internetowej. Jestem tylko twoim asystentem.",
+                    "Nie mam ulubionej strony internetowej. Jestem tylko wirtualnym asystentem.",
+                    "Nie mam ulubionej strony internetowej. Jestem tylko twoim wirtualnym asystentem.",
+                    "Nie mam ulubionej strony internetowej. Jestem tylko twoim cyfrowym asystentem.",
+                    "Nie mam ulubionej strony internetowej. Jestem tylko twoim wirtualnym pomocnikiem."
+                ]
+            },
+            {
+                pytania: [
+                    "jaka jest twoja ulubiona gra komputerowa"
+                ],
+                odpowiedz: [
+                    "Nie mam ulubionej gry komputerowej. Jestem tylko twoim asystentem.",
+                    "Nie mam ulubionej gry komputerowej. Jestem tylko wirtualnym asystentem.",
+                    "Nie mam ulubionej gry komputerowej. Jestem tylko twoim wirtualnym asystentem.",
+                    "Nie mam ulubionej gry komputerowej. Jestem tylko twoim cyfrowym asystentem.",
+                    "Nie mam ulubionej gry komputerowej. Jestem tylko twoim wirtualnym pomocnikiem."
+                ]
+            },
+            {
+                pytania: [
+                    "jaka jest twoja ulubiona gra planszowa",
+                    "jaka jest twoja ulubiona gra karciana"
+                ],
+                odpowiedz: [
+                    "Nie mam ulubionej gry planszowej. Jestem tylko twoim asystentem.",
+                    "Nie mam ulubionej gry planszowej. Jestem tylko wirtualnym asystentem.",
+                    "Nie mam ulubionej gry planszowej. Jestem tylko twoim wirtualnym asystentem.",
+                    "Nie mam ulubionej gry planszowej. Jestem tylko twoim cyfrowym asystentem.",
+                    "Nie mam ulubionej gry planszowej. Jestem tylko twoim wirtualnym pomocnikiem."
+                ]
+            },
+            {
+                pytania: [
+                    "jaka jest twoja ulubiona gra mobilna",
+                    "jaka jest twoja ulubiona gra na telefon"
+                ],
+                odpowiedz: [
+                    "Nie mam ulubionej gry mobilnej. Jestem tylko twoim asystentem.",
+                    "Nie mam ulubionej gry mobilnej. Jestem tylko wirtualnym asystentem.",
+                    "Nie mam ulubionej gry mobilnej. Jestem tylko twoim wirtualnym asystentem.",
+                    "Nie mam ulubionej gry mobilnej. Jestem tylko twoim cyfrowym asystentem.",
+                    "Nie mam ulubionej gry mobilnej. Jestem tylko twoim wirtualnym pomocnikiem."
+                ]
+            },
+            {
+                pytania: [
+                    "jaka jest twoja ulubiona gra na konsolę",
+                    "jaka jest twoja ulubiona gra na playstation"
+                ],
+                odpowiedz: [
+                    "Nie mam ulubionej gry na konsolę. Jestem tylko twoim asystentem.",
+                    "Nie mam ulubionej gry na konsolę. Jestem tylko wirtualnym asystentem.",
+                    "Nie mam ulubionej gry na konsolę. Jestem tylko twoim wirtualnym asystentem.",
+                    "Nie mam ulubionej gry na konsolę. Jestem tylko twoim cyfrowym asystentem.",
+                    "Nie mam ulubionej gry na konsolę. Jestem tylko twoim wirtualnym pomocnikiem."
+                ]
+            },
+            {
+                pytania: [
+                    "jaka jest twoja ulubiona gra na xbox",
+                    "jaka jest twoja ulubiona gra na nintendo",
+                    "jaka jest twoja ulubiona gra na switch",
+                    "jaka jest twoja ulubiona gra na ps4",
+                    "jaka jest twoja ulubiona gra na ps5"
+                ],
+                odpowiedz: [
+                    "Nie mam ulubionej gry na konsolę. Jestem tylko twoim asystentem.",
+                    "Nie mam ulubionej gry na konsolę. Jestem tylko wirtualnym asystentem.",
+                    "Nie mam ulubionej gry na konsolę. Jestem tylko twoim wirtualnym asystentem.",
+                    "Nie mam ulubionej gry na konsolę. Jestem tylko twoim cyfrowym asystentem.",
+                    "Nie mam ulubionej gry na konsolę. Jestem tylko twoim wirtualnym pomocnikiem.",
+                    "Nie umiem grać, jestem tylko twoim wirtualnym asystentem, ale mogę ci pomóc znaleźć informacje o grach na konsolę."
+                ]
+            },
+            {
+                pytania: [
+                    "jaka jest twoja ulubiona gra na pc",
+                    "jaka jest twoja ulubiona gra na komputer",
+                    "w co grasz na kompie"
+                ],
+                odpowiedz: [
+                    "Nie mam ulubionej gry na PC. Jestem tylko twoim asystentem.",
+                    "Nie mam ulubionej gry na PC. Jestem tylko wirtualnym asystentem.",
+                    "Nie mam ulubionej gry na PC. Jestem tylko twoim wirtualnym asystentem.",
+                    "Nie mam ulubionej gry na PC. Jestem tylko twoim cyfrowym asystentem.",
+                    "Nie mam ulubionej gry na PC. Jestem tylko twoim wirtualnym pomocnikiem."
+                ]
+            },
+            {
+                pytania: [
+                    "cześć",
+                    "witaj",
+                    "hej",
+                    "siema",
+                    "elo",
+                    "yo",
+                    "siemanko",
+                    "hejka",
+                    "hejooo",
+                    "dzień dobry",
+                    "dobry wieczór"
+                ],
+                odpowiedz: [
+                    "Cześć! Miło cię widzieć!",
+                    "Witaj! Cieszę się, że jesteś tutaj!",
+                    "Hej! Jak się masz?",
+                    "Siema! Co słychać?",
+                    "Elo! Jak leci?",
+                    "Yo! Czegoś szukasz?",
+                    "Siemanko! Czegoś szukasz?",
+                    "Hejka! Jak się czujesz?",
+                    "Hejooo! Czegoś szukasz?",
+                    "Dzień dobry! Jak się czujesz?",
+                    "Dobry wieczór! Czegoś szukasz?"
+                ]
+            }
+        ];
+    
+        let wiadomośćużytkownika;
+        let imięużytkownika;
+
 function javagptStar() {
     let rozpoczęcierozmowy = rozpoczęciezdania[Math.floor(Math.random() * rozpoczęciezdania.length)];
     document.getElementById("wynik").textContent = rozpoczęcierozmowy;
     setTimeout(() => {
-        let wiadomośćużytkownika = prompt("Wpisz swoją wiadomość:");
-    if (wiadomośćużytkownika === null || wiadomośćużytkownika.trim() === "") {
-        alert("Nie wpisano wiadomości.");
-        return;
-    }
-    else if (wiadomośćużytkownika.toLowerCase().includes("jak się masz")|| wiadomośćużytkownika.toLowerCase().includes("jak tam") || wiadomośćużytkownika.toLowerCase().includes("jak ci mija dzień?") || wiadomośćużytkownika.toLowerCase().includes("co u ciebie")) {
-        let odpowiedź = "Miło że o to pytasz, mam się git";
+        wiadomośćużytkownika = prompt("Wpisz swoją wiadomość:");
+        let wiadomość = wiadomośćużytkownika
+            .toLowerCase()
+            .replace(/[.,!?;:]/g, "")
+            .trim();
+
+        let znalezionyWynik = wyniki.find(element =>
+            element.pytania.some(pytanie =>
+                wiadomość.includes(pytanie.toLowerCase())
+            )
+        );
+
+        let odpowiedź = znalezionyWynik
+            ? znalezionyWynik.odpowiedz[0]
+            : "Przepraszam, nie rozumiem. Czy możesz powtórzyć?";
+
         document.getElementById("wynik").textContent = odpowiedź;
-    }
-    else if (wiadomośćużytkownika.toLowerCase().includes("co robisz")|| wiadomośćużytkownika.toLowerCase().includes("co tam") || wiadomośćużytkownika.toLowerCase().includes("co słychać") || wiadomośćużytkownika.toLowerCase().includes("jak leci")) {
-        let odpowiedź = "Właśnie rozmawiam z tobą, mam nadzieję że nie przynudzam. 😉";
-        document.getElementById("wynik").textContent = odpowiedź;
-    }
-    else if (wiadomośćużytkownika.toLowerCase().includes("żegnaj!") || wiadomośćużytkownika.toLowerCase().includes("do widzenia!")|| wiadomośćużytkownika.toLowerCase().includes("do następnego razu!")|| wiadomośćużytkownika.toLowerCase().includes("widzimy się")) {
-        let odpowiedź = "Do zobaczenia wkrótce! ";
-        document.getElementById("wynik").textContent = odpowiedź;
-    }
-    else if (wiadomośćużytkownika.toLowerCase().includes("dziękuję") || wiadomośćużytkownika.toLowerCase().includes("dzięki")|| wiadomośćużytkownika.toLowerCase().includes("dziękuje")|| wiadomośćużytkownika.toLowerCase().includes("dziękuję bardzo")) {
-        let odpowiedź = "Proszę bardzo! Cieszę się, że mogę pomóc.";
-        document.getElementById("wynik").textContent = odpowiedź;
-    }
-    else if (wiadomośćużytkownika.toLowerCase().includes("jaka jest twoja ulubiona gra?") || wiadomośćużytkownika.toLowerCase().includes("jaka jest twoja ulubiona gra")|| wiadomośćużytkownika.toLowerCase().includes("jaka jest twoja ulubiona gra wideo?")|| wiadomośćużytkownika.toLowerCase().includes("jaka jest twoja ulubiona gra wideo")) {
-        let odpowiedź = "Nie mam ulubionej gry. Jestem tylko twoim asystentem.";
-        document.getElementById("wynik").textContent = odpowiedź;
-    }
-    else if (wiadomośćużytkownika.toLowerCase().includes("jaka jest twoja ulubiona piosenka?") || wiadomośćużytkownika.toLowerCase().includes("jaka jest twoja ulubiona piosenka")|| wiadomośćużytkownika.toLowerCase().includes("jaka jest twoja ulubiona muzyka?")|| wiadomośćużytkownika.toLowerCase().includes("jaka jest twoja ulubiona muzyka")) {
-        let odpowiedź = "Nie mam ulubionej piosenki. Jestem tylko twoim asystentem.";
-        document.getElementById("wynik").textContent = odpowiedź;
-    }
-    else if (wiadomośćużytkownika.toLowerCase().includes("jaka jest twoja ulubiona książka?") || wiadomośćużytkownika.toLowerCase().includes("jaka jest twoja ulubiona książka")|| wiadomośćużytkownika.toLowerCase().includes("jaka jest twoja ulubiona literatura?")|| wiadomośćużytkownika.toLowerCase().includes("jaka jest twoja ulubiona literatura")) {
-        let odpowiedź = "Nie mam ulubionej książki. Jestem tylko twoim asystentem.";
-        document.getElementById("wynik").textContent = odpowiedź;
-    }
-    else if (wiadomośćużytkownika.toLowerCase().includes("jaka jest twoja ulubiona strona internetowa?") || wiadomośćużytkownika.toLowerCase().includes("jaka jest twoja ulubiona strona internetowa")|| wiadomośćużytkownika.toLowerCase().includes("jaka jest twoja ulubiona witryna?")|| wiadomośćużytkownika.toLowerCase().includes("jaka jest twoja ulubiona witryna")) {
-        let odpowiedź = "Nie mam ulubionej strony internetowej. Jestem tylko twoim asystentem.";
-        document.getElementById("wynik").textContent = odpowiedź;
-    }
-    else if (wiadomośćużytkownika.toLowerCase().includes("jaka jest twoja ulubiona gra komputerowa?") || wiadomośćużytkownika.toLowerCase().includes("jaka jest twoja ulubiona gra komputerowa")|| wiadomośćużytkownika.toLowerCase().includes("jaka jest twoja ulubiona gra wideo?")|| wiadomośćużytkownika.toLowerCase().includes("jaka jest twoja ulubiona gra wideo")) {
-        let odpowiedź = "Nie mam ulubionej gry komputerowej. Jestem tylko twoim asystentem.";
-        document.getElementById("wynik").textContent = odpowiedź;
-    }
-    else if (wiadomośćużytkownika.toLowerCase().includes("jaka jest twoja ulubiona gra planszowa?") || wiadomośćużytkownika.toLowerCase().includes("jaka jest twoja ulubiona gra planszowa")|| wiadomośćużytkownika.toLowerCase().includes("jaka jest twoja ulubiona gra karciana?")|| wiadomośćużytkownika.toLowerCase().includes("jaka jest twoja ulubiona gra karciana")) {
-        let odpowiedź = "Nie mam ulubionej gry planszowej. Jestem tylko twoim asystentem.";
-        document.getElementById("wynik").textContent = odpowiedź;
-    }
-    else if (wiadomośćużytkownika.toLowerCase().includes("jaka jest twoja ulubiona gra mobilna?") || wiadomośćużytkownika.toLowerCase().includes("jaka jest twoja ulubiona gra mobilna")|| wiadomośćużytkownika.toLowerCase().includes("jaka jest twoja ulubiona gra na telefon?")|| wiadomośćużytkownika.toLowerCase().includes("jaka jest twoja ulubiona gra na telefon")) {
-        let odpowiedź = "Nie mam ulubionej gry mobilnej. Jestem tylko twoim asystentem.";
-        document.getElementById("wynik").textContent = odpowiedź;
-    }
-    else if (wiadomośćużytkownika.toLowerCase().includes("jaka jest twoja ulubiona gra na konsolę?") || wiadomośćużytkownika.toLowerCase().includes("jaka jest twoja ulubiona gra na konsolę")|| wiadomośćużytkownika.toLowerCase().includes("jaka jest twoja ulubiona gra na PlayStation?")|| wiadomośćużytkownika.toLowerCase().includes("jaka jest twoja ulubiona gra na PlayStation")) {
-        let odpowiedź = "Nie mam ulubionej gry na konsolę. Jestem tylko twoim asystentem.";
-        document.getElementById("wynik").textContent = odpowiedź;
-    }
-    else if (wiadomośćużytkownika.toLowerCase().includes("jaka jest twoja ulubiona gra na Xbox?") || wiadomośćużytkownika.toLowerCase().includes("jaka jest twoja ulubiona gra na Xbox")|| wiadomośćużytkownika.toLowerCase().includes("jaka jest twoja ulubiona gra na Nintendo?")|| wiadomośćużytkownika.toLowerCase().includes("jaka jest twoja ulubiona gra na Nintendo")) {
-        let odpowiedź = "Nie mam ulubionej gry. Jestem tylko twoim asystentem.";
-        document.getElementById("wynik").textContent = odpowiedź;
-    }
-    else if (wiadomośćużytkownika.toLowerCase().includes("jaka jest twoja ulubiona gra na PC?") || wiadomośćużytkownika.toLowerCase().includes("jaka jest twoja ulubiona gra na PC")|| wiadomośćużytkownika.toLowerCase().includes("jaka jest twoja ulubiona gra na komputer?")|| wiadomośćużytkownika.toLowerCase().includes("jaka jest twoja ulubiona gra na komputer")) {
-        let odpowiedź = "Nie mam ulubionej gry na PC. Jestem tylko twoim asystentem.";
-        document.getElementById("wynik").textContent = odpowiedź;
-    }
-    else if (wiadomośćużytkownika.toLowerCase().includes("cześć") || wiadomośćużytkownika.toLowerCase().includes("Cześć")|| wiadomośćużytkownika.toLowerCase().includes("witaj")|| wiadomośćużytkownika.toLowerCase().includes("Witaj")|| wiadomośćużytkownika.toLowerCase().includes("hej")|| wiadomośćużytkownika.toLowerCase().includes("Hej")|| wiadomośćużytkownika.toLowerCase().includes("siema")|| wiadomośćużytkownika.toLowerCase().includes("Siema")|| wiadomośćużytkownika.toLowerCase().includes("elo")|| wiadomośćużytkownika.toLowerCase().includes("Elo")|| wiadomośćużytkownika.toLowerCase().includes("yo")|| wiadomośćużytkownika.toLowerCase().includes("Yo")|| wiadomośćużytkownika.toLowerCase().includes("siemanko")|| wiadomośćużytkownika.toLowerCase().includes("Siemanko")|| wiadomośćużytkownika.toLowerCase().includes("hejka")|| wiadomośćużytkownika.toLowerCase().includes("Hejka")|| wiadomośćużytkownika.toLowerCase().includes("hejooo")|| wiadomośćużytkownika.toLowerCase().includes("Hejooo")|| wiadomośćużytkownika.toLowerCase().includes("Dzień dobry")|| wiadomośćużytkownika.toLowerCase().includes("dzień dobry")|| wiadomośćużytkownika.toLowerCase().includes("dobry wieczór")|| wiadomośćużytkownika.toLowerCase().includes("Dobry wieczór")) {
-        let odpowiedź = "Cześć! Miło cię widzieć!";
-        document.getElementById("wynik").textContent = odpowiedź;
-    }
-    else if (wiadomośćużytkownika.toLowerCase().includes("jak masz na imię") || wiadomośćużytkownika.toLowerCase().includes("jak się nazywasz")|| wiadomośćużytkownika.toLowerCase().includes("jak cię nazywać")|| wiadomośćużytkownika.toLowerCase().includes("jak mam cię nazywać")|| wiadomośćużytkownika.toLowerCase().includes("Jak mam cię nazywać?")|| wiadomośćużytkownika.toLowerCase().includes("Jak masz na imię?")|| wiadomośćużytkownika.toLowerCase().includes("Jak się nazywasz?")|| wiadomośćużytkownika.toLowerCase().includes("Jak cię nazywać?")|| wiadomośćużytkownika.toLowerCase().includes("Jak się zwiesz?")|| wiadomośćużytkownika.toLowerCase().includes("kim jesteś?")|| wiadomośćużytkownika.toLowerCase().includes("Kim jesteś?")|| wiadomośćużytkownika.toLowerCase().includes("kim jesteś")|| wiadomośćużytkownika.toLowerCase().includes("kim ty jesteś?")|| wiadomośćużytkownika.toLowerCase().includes("Kim ty jesteś?")|| wiadomośćużytkownika.toLowerCase().includes("kim ty jesteś")) {
-        let odpowiedź = "Nazywam się JavaGPT, miło mi cię poznać!";
-        document.getElementById("wynik").textContent = odpowiedź;
-    }
-    else {
-        let odpowiedź = "Przepraszam, niestety nie rozumiem.";
-        document.getElementById("wynik").textContent = odpowiedź;
-    }
   }, 100);
 }
  function startGame() {
@@ -176,69 +452,90 @@ function javagptStar() {
                 }
                 // Tutaj możesz dodać logikę gry zgadywanki
             }
-          function javagptMagic() {
-              if (imięużytkownika === null) {
-                  imięużytkownika = prompt("Jak masz na imię?");
-                  if (imięużytkownika === null) return;
-                  imięużytkownika = imięużytkownika.trim() + ". ";
-              }
-              let długość
-              let możliwadługość = Math.floor(Math.random() * 2) + 1; // losowa możliwa długość zdania od 1 do 2
-              if (możliwadługość === 2){
-              długość = Math.floor(Math.random() * 3) + 1; // losowa długość zdania od 1 do 3
-              }
-              else if (możliwadługość === 1){
-              długość = Math.floor(Math.random() * 2) + 1; // losowa długość zdania od 1 do 2
-              }
-              if (długość === 1) {
-                  let rozpoczęcie = rozpoczęciezdania[Math.floor(Math.random() * rozpoczęciezdania.length)];
-                  let rozwinięcie = rozwinięciezdania[Math.floor(Math.random() * rozwinięciezdania.length)];
-                  let zakończenie = zakończeniezdania[Math.floor(Math.random() * zakończeniezdania.length)];
-                  let zdanie = rozpoczęcie + imięużytkownika + rozwinięcie + zakończenie;
-                 document.querySelector("h2").textContent = zdanie;
-              } else if (długość === 2) {
-                  let rozpoczęcie = rozpoczęciezdania[Math.floor(Math.random() * rozpoczęciezdania.length)];
-                  let rozwinięcie = rozwinięciezdania[Math.floor(Math.random() * rozwinięciezdania.length)];
-                  let rozwinięcie2 = rozwinięciezdania2[Math.floor(Math.random() * rozwinięciezdania2.length)];
-                  let zakończenie = zakończeniezdania[Math.floor(Math.random() * zakończeniezdania.length)];
-                  let zdanie = rozpoczęcie + imięużytkownika + rozwinięcie + rozwinięcie2 + zakończenie;
-                  document.querySelector("h2").textContent = zdanie;
-              } else {
-              let rozpoczęcie = rozpoczęciezdania[Math.floor(Math.random() * rozpoczęciezdania.length)];
-              let rozwinięcie = rozwinięciezdania[Math.floor(Math.random() * rozwinięciezdania.length)];
-              let rozwinięcie2 = rozwinięciezdania2[Math.floor(Math.random() * rozwinięciezdania2.length)];
-              let rozwinięcie3 = rozwinięciezdania3[Math.floor(Math.random() * rozwinięciezdania3.length)];
-              let zakończenie = zakończeniezdania[Math.floor(Math.random() * zakończeniezdania.length)];
-              let zdanie = rozpoczęcie + imięużytkownika + rozwinięcie + rozwinięcie2 + rozwinięcie3 + ". " + zakończenie;
-              document.querySelector("h2").textContent = zdanie;
-              // Tutaj możesz dodać logikę gry w JavaGPT
-          }
-          let obrazekURL = obrazki[Math.floor(Math.random() * obrazki.length)];
-          document.getElementById("obrazek").src = obrazekURL;
-      }
-      let link;
-      function kalkulator() {
-          let liczba = prompt("Podaj liczbę:");
-          let liczba2 = prompt("Podaj drugą liczbę:");
-          let wynik = parseFloat(liczba) + parseFloat(liczba2);
-          if (wynik === 67) {
-              link = "https://www.youtube.com/embed/kpeVxYk8CdU?autoplay=1&loop=1&playlist=kpeVxYk8CdU";
-              odtwórzmuzykę();
-          }
-          alert("Wynik dodawania: " + wynik);
-      }
-      function odtwórzmuzykę() {
-          if (document.getElementById("ytplayer")) return;
+            function javagptMagic() {
+                if (typeof imięużytkownika === 'undefined') {
+                    imięużytkownika = prompt("Jak masz na imię?") + ". ";
+                }
+                let długość;
+                let możliwadługość = Math.floor(Math.random() * 2) + 1; // losowa możliwa długość zdania od 1 do 2
+                if (możliwadługość === 2){
+                długość = Math.floor(Math.random() * 3) + 1; // losowa długość zdania od 1 do 3
+                }
+                else if (możliwadługość === 1){
+                długość = Math.floor(Math.random() * 2) + 1; // losowa długość zdania od 1 do 2
+                }
+                if (długość === 1) {
+                    let rozpoczęcie = rozpoczęciezdania[Math.floor(Math.random() * rozpoczęciezdania.length)];
+                    let rozwinięcie = rozwinięciezdania[Math.floor(Math.random() * rozwinięciezdania.length)];
+                    let zakończenie = zakończeniezdania[Math.floor(Math.random() * zakończeniezdania.length)];
+                    let zdanie = rozpoczęcie + imięużytkownika + rozwinięcie + zakończenie;
+                    document.querySelector("h2").textContent = zdanie;
+                } else if (długość === 2) {
+                    let rozpoczęcie = rozpoczęciezdania[Math.floor(Math.random() * rozpoczęciezdania.length)];
+                    let rozwinięcie = rozwinięciezdania[Math.floor(Math.random() * rozwinięciezdania.length)];
+                    let rozwinięcie2 = rozwinięciezdania2[Math.floor(Math.random() * rozwinięciezdania2.length)];
+                    let zakończenie = zakończeniezdania[Math.floor(Math.random() * zakończeniezdania.length)];
+                    let zdanie = rozpoczęcie + imięużytkownika + rozwinięcie + rozwinięcie2 + zakończenie;
+                    document.querySelector("h2").textContent = zdanie;
+                } else {
+                let rozpoczęcie = rozpoczęciezdania[Math.floor(Math.random() * rozpoczęciezdania.length)];
+                let rozwinięcie = rozwinięciezdania[Math.floor(Math.random() * rozwinięciezdania.length)];
+                let rozwinięcie2 = rozwinięciezdania2[Math.floor(Math.random() * rozwinięciezdania2.length)];
+                let rozwinięcie3 = rozwinięciezdania3[Math.floor(Math.random() * rozwinięciezdania3.length)];
+                let zakończenie = zakończeniezdania[Math.floor(Math.random() * zakończeniezdania.length)];
+                let zdanie = rozpoczęcie + imięużytkownika + rozwinięcie + rozwinięcie2 + rozwinięcie3 + ". " + zakończenie;
+                document.querySelector("h2").textContent = zdanie;
+                // Tutaj możesz dodać logikę gry w JavaGPT
+            }
+            let obrazekURL = obrazki[Math.floor(Math.random() * obrazki.length)];
+            document.getElementById("obrazek").src = obrazekURL;
+        }
+        let link;
+        function kalkulator() {
+            let liczba = prompt("Podaj liczbę:");
+            let liczba2 = prompt("Podaj drugą liczbę:");
+            let wynik = parseFloat(liczba) + parseFloat(liczba2);
+            if (wynik === 67) {
+                link = "https://www.youtube.com/embed/kpeVxYk8CdU?autoplay=1&loop=1&playlist=kpeVxYk8CdU";
+                odtwórzmuzykę();
+            }
+            alert("Wynik dodawania: " + wynik);
+        }
+        function odtwórzmuzykę() {
+            if (document.getElementById("ytplayer")) return;
 
-          let player = document.createElement("iframe");
-          document.getElementById("easter-egg").p = "Teraz odtwarzane: Self Awere utworzone przez: Temper City";
+            let player = document.createElement("iframe");
 
-          player.id = "ytplayer";
-          player.src = link;
-          player.width = "1";
-          player.height = "1";
-          player.style.border = "none";
-          player.referrerPolicy = "strict-origin-when-cross-origin";
-          player.allow = "autoplay; encrypted-media";
-          document.body.appendChild(player);
-      }
+            player.id = "ytplayer";
+            player.src = link;
+            player.width = "1";
+            player.height = "1";
+            player.style.border = "none";
+            player.referrerPolicy = "strict-origin-when-cross-origin";
+            player.allow = "autoplay; encrypted-media";
+            document.body.appendChild(player);
+        }
+function JavagptShine() {
+    let rozpoczęcierozmowy = rozpoczęciezdania[Math.floor(Math.random() * rozpoczęciezdania.length)];
+    document.getElementById("wynik").textContent = rozpoczęcierozmowy;
+    setTimeout(() => {
+        wiadomośćużytkownika = prompt("Wpisz swoją wiadomość:");
+        let wiadomość = wiadomośćużytkownika
+            .toLowerCase()
+            .replace(/[.,!?;:]/g, "")
+            .trim();
+
+        let znalezionyWynik = wyniki.find(element =>
+            element.pytania.some(pytanie =>
+                wiadomość.includes(pytanie.toLowerCase())
+            )
+        );
+
+        let odpowiedź = znalezionyWynik
+            ? znalezionyWynik.odpowiedz[Math.floor(Math.random() * znalezionyWynik.odpowiedz.length)]
+            : "Przepraszam, nie rozumiem. Czy możesz powtórzyć?";
+
+        document.getElementById("wynik").textContent = odpowiedź;
+  }, 100);
+    
+}
