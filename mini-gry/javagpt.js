@@ -413,6 +413,7 @@ const obrazki = [
                 ]
             },
             {
+            
               pytania: [
                 "kim jesteś",
                 "kto ty",
@@ -422,7 +423,11 @@ const obrazki = [
               odpowiedz: [
                 "nazywam się Java GPT",
                 "mam na imię Java GPT jestem otwarto źródłowym asystentem który ma ci pomagać"
-        ];
+              ]
+            }
+        ]
+    
+    
     
         let wiadomośćużytkownika;
         let imięużytkownika;
