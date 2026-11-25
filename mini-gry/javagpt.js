@@ -411,7 +411,17 @@ const obrazki = [
                     "Dzień dobry! Jak się czujesz?",
                     "Dobry wieczór! Czegoś szukasz?"
                 ]
-            }
+            },
+            {
+              pytania: [
+                "kim jesteś",
+                "kto ty",
+                "jak się zwiesz",
+                "jak się nazywasz",
+                ],
+              odpowiedz: [
+                "nazywam się Java GPT",
+                "mam na imię Java GPT jestem otwarto źródłowym asystentem który ma ci pomagać"
         ];
     
         let wiadomośćużytkownika;
