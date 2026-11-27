@@ -419,10 +419,18 @@ const obrazki = [
                 "kto ty",
                 "jak się zwiesz",
                 "jak się nazywasz",
+                "jakie jest twoje imię",
+                "jak masz na imię",
+                "jak cię zwą",
+                "jak cię nazywają"
                 ],
               odpowiedz: [
                 "nazywam się Java GPT",
-                "mam na imię Java GPT jestem otwarto źródłowym asystentem który ma ci pomagać"
+                "mam na imię Java GPT, jestem otwarto źródłowym asystentem który ma ci pomagać.",
+                "jestem Java GPT, wirtualnym asystentem który ma ci pomagać.",
+                "jestem Java GPT, wirtualnym asystentem który ma ci pomagać w twoich zadaniach.",
+                "jestem Java GPT, wirtualnym asystentem który ma ci pomagać w twoich zadaniach i odpowiadać na twoje pytania.",
+                "zwę się Java GPT, jestem personalnym asystentem który pomaga ci na co dzień."
               ]
             }
         ]
@@ -553,4 +561,7 @@ function JavagptShine() {
         document.getElementById("wynik").textContent = odpowiedź;
   }, 100);
     
+}
+function JavagptWord() {
+
 }
